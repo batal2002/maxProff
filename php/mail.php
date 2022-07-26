@@ -8,15 +8,23 @@ $json = file_get_contents('php://input');
 $obj = json_decode($json, true);
 
 // Переменные, которые отправляет пользователь
-$name = $obj['name'];
+$type = $obj['type'];
+$property = $obj['property'];
+$number = $obj['number'];
+$from = $obj['from'];
+$to = $obj['to'];
 $tel = $obj['tel'];
 
 // Формирование самого письма
 $title = "Заголовок письма";
 $body = "
     <h2>Новое письмо</h2>
-    <b>Имя:</b> $name<br>
-    <b>Почта:</b> $tel<br><br>
+    <b>Вид ремонта:</b> $type<br>
+    <b>Тип недвижимости:</b> $property<br>
+    <b>Количество комнат:</b> $number<br>
+    <b>От, м2:</b> $from<br>
+    <b>До, м2:</b> $to<br>
+    <b>Телефон:</b> $tel<br><br>
 ";
 
 //Настройки PHPMailer

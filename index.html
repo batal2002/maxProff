@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220726113424">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220726182333">
     <title>Главная</title>
 </head>
     <body>
@@ -33,7 +33,7 @@
                 </div>
                 <span class="tel__footer">08:00 - 22:00, без выходных</span>
             </a>
-            <button class="header__button">Заказать звонок</button>
+            <button class="order-a-call header__button">Заказать звонок</button>
         </div>
         <nav class="header__menu">
             <button class="header__button">Заказать звонок</button>
@@ -102,6 +102,140 @@
         </nav>
     </div>
 </header>
-        <script src="js/app.min.js?_v=20220726113424"></script>
+        <section class="form">
+    <div class="container form__container">
+        <div class="form__wrapper">
+            <h1 class="form__title">РЕМОНТ КВАРТИР В МОСКВЕ И МО</h1>
+            <span class="form__subtitle">от<span>2450</span>руб/м2</span>
+            <div class="form__description">
+                <div class="form__item">
+                    <div class="form__img">
+                        <picture><source srcset="img/form/1.webp" type="image/webp"><img src="img/form/1.png" alt=""></picture>
+                    </div>
+                    <span class="form__text">Оплата по факту приема работ</span>
+                </div>
+                <div class="form__item">
+                    <div class="form__img">
+                        <picture><source srcset="img/form/2.webp" type="image/webp"><img src="img/form/2.png" alt=""></picture>
+                    </div>
+                    <span class="form__text">Замер и составление сметы БЕСПЛАТНО</span>
+                </div>
+                <div class="form__item">
+                    <div class="form__img">
+                        <picture><source srcset="img/form/3.webp" type="image/webp"><img src="img/form/3.png" alt=""></picture>
+                    </div>
+                    <span class="form__text">Выезд сметчика </span>
+                </div>
+                <div class="form__item">
+                    <div class="form__img">
+                        <picture><source srcset="img/form/4.webp" type="image/webp"><img src="img/form/4.png" alt=""></picture>
+                    </div>
+                    <span class="form__text">Гарантия 3 года</span>
+                </div>
+            </div>
+        </div>
+        <form action="" class="form__calc" method="POST">
+            <h5 class="form__name">РАССЧИТАЙТЕ стоимость ремонта</h5>
+            <div class="form__radiobuttons">
+                <h6 class="form__choice-title">Вид ремонта:</h6>
+                <div class="form__choice">
+                    <label class="form__label" for="radio-type-1">
+                        <input class="form__input" id="radio-type-1" type="radio" name="type" value="Косметический" checked>
+                        <span>Косметический</span>
+                    </label>
+                    <label class="form__label" for="radio-type-2">
+                        <input class="form__input" id="radio-type-2" type="radio" name="type" value="Капитальный">
+                        <span>Капитальный</span>
+                    </label>
+                    <label class="form__label" for="radio-type-3">
+                        <input class="form__input" id="radio-type-3" type="radio" name="type" value="Под ключ">
+                        <span>Под ключ</span>
+                    </label>
+                    <label class="form__label" for="radio-type-4">
+                        <input class="form__input" id="radio-type-4" type="radio" name="type" value="Дизайнерский">
+                        <span>Дизайнерский</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form__radiobuttons">
+                <h6 class="form__choice-title">Тип вашей недвижимости:</h6>
+                <div class="form__choice">
+                    <label class="form__label" for="radio-property-1">
+                        <input class="form__input" id="radio-property-1" type="radio" name="property" value="Новостройка" checked>
+                        <span>Новостройка</span>
+                    </label>
+                    <label class="form__label" for="radio-property-2">
+                        <input class="form__input" id="radio-property-2" type="radio" name="property" value="Вторичное жилье">
+                        <span>Вторичное жилье</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form__radiobuttons">
+                <h6 class="form__choice-title">Количество комнат</h6>
+                <div class="form__choice-room">
+                    <label class="form__label" for="radio-number-1">
+                        <input class="form__input" id="radio-number-1" type="radio" name="number" value="1" checked>
+                        <span>1</span>
+                    </label>
+                    <label class="form__label" for="radio-number-2">
+                        <input class="form__input" id="radio-number-2" type="radio" name="number" value="2">
+                        <span>2</span>
+                    </label>
+                    <label class="form__label" for="radio-number-3">
+                        <input class="form__input" id="radio-number-3" type="radio" name="number" value="3">
+                        <span>3</span>
+                    </label>
+                    <label class="form__label" for="radio-number-4">
+                        <input class="form__input" id="radio-number-4" type="radio" name="number" value="4">
+                        <span>4</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form__area">
+                <h6 class="form__choice-title">Площадь, м2:</h6>
+                <div class="form__choice-area">
+                    <div class="form__input-wrapper">
+                        <input class="form__input-text" type="text" name="from">
+                        <span>от</span> 
+                    </div>
+                    <span class="form__line"></span>
+                    <div class="form__input-wrapper">
+                        <input class="form__input-text" type="text" name="to"> 
+                        <span>до</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form__calculation">
+                <div class="form__calculation-item">
+                    <span>Срок ремонта:</span>
+                    <p>до 34 дней</p>
+                </div>
+                <div class="form__calculation-item">
+                    <span>Скидка составит:</span>
+                    <p>23 765 руб</p>
+                </div>
+            </div>
+            <div class="form__send">
+                <h6 class="form__choice-title">Введите номер телефона</h6>
+                <input class="form__input-tel" id="tel" type="tel" name="tel" placeholder="+7">
+                <button class="button-green form__button" type="submit">Заказать</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+        
+        <div class="modal">
+    <div class="modal__block">
+        <div class="modal__img">
+            <img loading="lazy" src="img/modal-done.svg" alt="">
+            <div class="modal__ellipse"></div>
+            <div class="modal__ellipse-blur"></div>
+        </div>
+        <span class="modal__title">Ваша заявка принята</span>
+        <p class="modal__text">В ближайшее время наш менеджер свяжется  с Вами</p>
+    </div>
+</div>
+        <script src="js/app.min.js?_v=20220726182333"></script>
     </body>
 </html>
