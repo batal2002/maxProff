@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220726182333">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220726224957">
     <title>Главная</title>
 </head>
     <body>
@@ -16,7 +16,7 @@
                 <span></span>
             </div>
             <a href="#" class="logo header__logo">Max<span class="--green">P</span>roff</a>
-            <button class="header__button-mobile"></button>
+            <button class="open-modal header__button-mobile"></button>
             <nav class="header__nav">
                 <a href="" class="header__anchor">Цены</a>
                 <a href="" class="header__anchor">Услуги</a>
@@ -33,7 +33,7 @@
                 </div>
                 <span class="tel__footer">08:00 - 22:00, без выходных</span>
             </a>
-            <button class="order-a-call header__button">Заказать звонок</button>
+            <button class="open-modal header__button">Заказать звонок</button>
         </div>
         <nav class="header__menu">
             <button class="header__button">Заказать звонок</button>
@@ -223,7 +223,158 @@
         </form>
     </div>
 </section>
+        <main>
+            <section class="price">
+    <div class="container price__container">
+        <h2 class="title price__title">Цены на ремонт</h2>
+        <div class="swiper price__slider">
+            <div class="swiper-wrapper price__wrapper">
+                <div class="swiper-slide price__slide slide">
+                    <div class="slide__header">
+                        <div class="slide__img">
+                            <picture><source srcset="img/price/avatar.webp" type="image/webp"><img src="img/price/avatar.png" alt=""></picture>
+                        </div>
+                        <div class="slide__type">
+                            <h3 class="slide__title">Косметический</h3>
+                            <span class="slide__time">от 5 дней</span>
+                        </div>
+                    </div>
+                    <div class="slide__info">
+                        <span>Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире: заменить покрытие стен, пола и потолка без предварительной подготовки</span>
+                    </div>
+                    <div class="slide__services">
+                        <h5 class="slide__name">Демонтаж</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Демонтаж старых покрытий</li>
+                            <li class="slide__service">Демонтаж старой электрики</li>
+                        </ul>
+                        <h5 class="slide__name">Черновые работы</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Грунтовка стен и пола</li>
+                        </ul>
+                        <h5 class="slide__name --grey">Чистовые работы</h5>
+                    </div>
+                    <div class="slide__footer">
+                        <a href="" class="slide__link">Список&nbsp;  работ</a>
+                        <div class="slide__price">
+                            <span class="slide__old">от <span>3 245</span> руб/м2</span>
+                            <span class="slide__current">от <span>2 450</span> руб/м2</span>
+                        </div>
+                        <button class="open-modal button-green slide__button">Получить смету</button>
+                    </div>
+                </div>
+                <div class="swiper-slide price__slide slide">
+                    <div class="slide__header">
+                        <div class="slide__img">
+                            <picture><source srcset="img/price/avatar.webp" type="image/webp"><img src="img/price/avatar.png" alt=""></picture>
+                        </div>
+                        <div class="slide__type">
+                            <h3 class="slide__title">Капитальный</h3>
+                            <span class="slide__time">от 14 дней</span>
+                        </div>
+                    </div>
+                    <div class="slide__info">
+                        <span>Такой тип ремонта подойдет, если требкеться отремонтировать квартиру: выровнять стены, сделать стяжку полов, проложить инженерию и выполнить чистовую отделку.</span>
+                    </div>
+                    <div class="slide__services">
+                        <h5 class="slide__name">Демонтаж</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Демонтаж старых покрытий</li>
+                            <li class="slide__service">Демонтаж старой электрики</li>
+                        </ul>
+                        <h5 class="slide__name">Черновые работы</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Грунтовка стен и пола</li>
+                            <li class="slide__service">Шпатлевка и штукатурка стен</li>
+                            <li class="slide__service --grey">Устройство наливных полов</li>
+                        </ul>
+                    </div>
+                    <div class="slide__footer">
+                        <a href="" class="slide__link">Список&nbsp;  работ</a>
+                        <div class="slide__price">
+                            <span class="slide__old">от <span>5 445</span> руб/м2</span>
+                            <span class="slide__current">от <span>4 950</span> руб/м2</span>
+                        </div>
+                        <button class="open-modal button-green slide__button">Получить смету</button>
+                    </div>
+                </div>
+                <div class="swiper-slide price__slide slide">
+                    <div class="slide__header">
+                        <div class="slide__img">
+                            <picture><source srcset="img/price/avatar.webp" type="image/webp"><img src="img/price/avatar.png" alt=""></picture>
+                        </div>
+                        <div class="slide__type">
+                            <h3 class="slide__title">Под ключ</h3>
+                            <span class="slide__time">от 11 дней</span>
+                        </div>
+                    </div>
+                    <div class="slide__info">
+                        <span>Ремонт класса «евро» — капитальный ремонт с применением современных отделочных материалов и стандартов, включающий перепланировку.</span>
+                    </div>
+                    <div class="slide__services">
+                        <h5 class="slide__name">Демонтаж</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Демонтаж старых покрытий</li>
+                            <li class="slide__service">Демонтаж старой электрики</li>
+                            <li class="slide__service">Демонтаж дверей</li>
+                        </ul>
+                        <h5 class="slide__name">Черновые работы</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Грунтовка стен и пола</li>
+                            <li class="slide__service --grey">Шпатлевка и штукатурка стен</li>
+                        </ul>
+                    </div>
+                    <div class="slide__footer">
+                        <a href="" class="slide__link">Список&nbsp;  работ</a>
+                        <div class="slide__price">
+                            <span class="slide__old">от <span>5 995</span> руб/м2</span>
+                            <span class="slide__current">от <span>5 450</span> руб/м2</span>
+                        </div>
+                        <button class="open-modal button-green slide__button">Получить смету</button>
+                    </div>
+                </div>
+                <div class="swiper-slide price__slide slide">
+                    <div class="slide__header">
+                        <div class="slide__img">
+                            <picture><source srcset="img/price/avatar.webp" type="image/webp"><img src="img/price/avatar.png" alt=""></picture>
+                        </div>
+                        <div class="slide__type">
+                            <h3 class="slide__title">Дизайнерский</h3>
+                            <span class="slide__time">от 20 дней</span>
+                        </div>
+                    </div>
+                    <div class="slide__info">
+                        <span>Дизайнерский ремонт ориентирован для настоящих ценителей комфорта, эстетики и внутреннего удобства.</span>
+                    </div>
+                    <div class="slide__services">
+                        <h5 class="slide__name">Демонтаж</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Демонтаж старых покрытий</li>
+                            <li class="slide__service">Демонтаж старой электрики</li>
+                            <li class="slide__service">Демонтаж дверей</li>
+                        </ul>
+                        <h5 class="slide__name">Черновые работы</h5>
+                        <ul class="slide__list">
+                            <li class="slide__service">Грунтовка стен и пола</li>
+                            <li class="slide__service --grey">Шпатлевка и штукатурка стен</li>
+                        </ul>
+                    </div>
+                    <div class="slide__footer">
+                        <a href="" class="slide__link">Список&nbsp;  работ</a>
+                        <div class="slide__price">
+                            <span class="slide__old">от <span>9 800</span> руб/м2</span>
+                            <span class="slide__current">от <span>7 500</span> руб/м2</span>
+                        </div>
+                        <button class="open-modal button-green slide__button">Получить смету</button>
+                    </div>
+                </div>
+            </div>
 
+            <div class="swiper-pagination price__pagination"></div>
+        </div>
+    </div>
+</section>
+        </main>
         
         <div class="modal">
     <div class="modal__block">
@@ -236,6 +387,6 @@
         <p class="modal__text">В ближайшее время наш менеджер свяжется  с Вами</p>
     </div>
 </div>
-        <script src="js/app.min.js?_v=20220726182333"></script>
+        <script src="js/app.min.js?_v=20220726224957"></script>
     </body>
 </html>
