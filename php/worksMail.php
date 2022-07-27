@@ -9,22 +9,14 @@ $obj = json_decode($json, true);
 
 // Переменные, которые отправляет пользователь
 $type = $obj['type'];
-$property = $obj['property'];
-$number = $obj['number'];
-$from = $obj['from'];
-$to = $obj['to'];
-$tel = $obj['tel'];
+$area = $obj['area'];
 
 // Формирование самого письма
 $title = "Заголовок письма";
 $body = "
     <h2>Новое письмо</h2>
     <b>Вид ремонта:</b> $type<br>
-    <b>Тип недвижимости:</b> $property<br>
-    <b>Количество комнат:</b> $number<br>
-    <b>От, м2:</b> $from<br>
-    <b>До, м2:</b> $to<br>
-    <b>Телефон:</b> $tel<br><br>
+    <b>Площадь:</b> $area<br>
 ";
 
 //Настройки PHPMailer
@@ -53,7 +45,7 @@ try {
     // $mail->setFrom('batlovb@yandex.ru', 'batlovb'); // Адрес самой почты и имя отправителя
 
     $mail->addAddress('bogdan200255@gmail.com');  
-    $mail->addAddress('batlovb@yandex.ru');   
+    $mail->addAddress('batlovb@yandex.ru');  
 
     // Отправка сообщения
     $mail->isHTML(true);

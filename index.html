@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220726224957">
-    <title>Главная</title>
+    <link rel="icon" href="img/MP.svg">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220727182618">
+    <title>MaxProff</title>
 </head>
     <body>
         <div class="overlay"></div>
@@ -16,9 +17,9 @@
                 <span></span>
             </div>
             <a href="#" class="logo header__logo">Max<span class="--green">P</span>roff</a>
-            <button class="open-modal header__button-mobile"></button>
+            <a href="tel:+72332222222" class="header__button-mobile"></a>
             <nav class="header__nav">
-                <a href="" class="header__anchor">Цены</a>
+                <a href="#price" class="header__anchor">Цены</a>
                 <a href="" class="header__anchor">Услуги</a>
                 <a href="" class="header__anchor">Портфолио</a>
                 <a href="" class="header__anchor">Акции</a>
@@ -83,7 +84,7 @@
             <a href="" class="header__link">Прочие услуги</a>
 
             <nav class="header__nav">
-                <a href="" class="header__anchor">Цены</a>
+                <a href="#price" class="header__anchor">Цены</a>
                 <a href="" class="header__anchor">Услуги</a>
                 <a href="" class="header__anchor">Портфолио</a>
                 <a href="" class="header__anchor">Акции</a>
@@ -139,20 +140,20 @@
             <div class="form__radiobuttons">
                 <h6 class="form__choice-title">Вид ремонта:</h6>
                 <div class="form__choice">
-                    <label class="form__label" for="radio-type-1">
-                        <input class="form__input" id="radio-type-1" type="radio" name="type" value="Косметический" checked>
+                    <label class="label form__label" for="radio-type-1">
+                        <input class="radio form__input" id="radio-type-1" type="radio" name="type" value="Косметический" checked>
                         <span>Косметический</span>
                     </label>
-                    <label class="form__label" for="radio-type-2">
-                        <input class="form__input" id="radio-type-2" type="radio" name="type" value="Капитальный">
+                    <label class="label form__label" for="radio-type-2">
+                        <input class="radio form__input" id="radio-type-2" type="radio" name="type" value="Капитальный">
                         <span>Капитальный</span>
                     </label>
-                    <label class="form__label" for="radio-type-3">
-                        <input class="form__input" id="radio-type-3" type="radio" name="type" value="Под ключ">
+                    <label class="label form__label" for="radio-type-3">
+                        <input class="radio form__input" id="radio-type-3" type="radio" name="type" value="Под ключ">
                         <span>Под ключ</span>
                     </label>
-                    <label class="form__label" for="radio-type-4">
-                        <input class="form__input" id="radio-type-4" type="radio" name="type" value="Дизайнерский">
+                    <label class="label form__label" for="radio-type-4">
+                        <input class="radio form__input" id="radio-type-4" type="radio" name="type" value="Дизайнерский">
                         <span>Дизайнерский</span>
                     </label>
                 </div>
@@ -160,12 +161,12 @@
             <div class="form__radiobuttons">
                 <h6 class="form__choice-title">Тип вашей недвижимости:</h6>
                 <div class="form__choice">
-                    <label class="form__label" for="radio-property-1">
-                        <input class="form__input" id="radio-property-1" type="radio" name="property" value="Новостройка" checked>
+                    <label class="label form__label" for="radio-property-1">
+                        <input class="radio form__input" id="radio-property-1" type="radio" name="property" value="Новостройка" checked>
                         <span>Новостройка</span>
                     </label>
-                    <label class="form__label" for="radio-property-2">
-                        <input class="form__input" id="radio-property-2" type="radio" name="property" value="Вторичное жилье">
+                    <label class="label form__label" for="radio-property-2">
+                        <input class="radio form__input" id="radio-property-2" type="radio" name="property" value="Вторичное жилье">
                         <span>Вторичное жилье</span>
                     </label>
                 </div>
@@ -173,20 +174,20 @@
             <div class="form__radiobuttons">
                 <h6 class="form__choice-title">Количество комнат</h6>
                 <div class="form__choice-room">
-                    <label class="form__label" for="radio-number-1">
-                        <input class="form__input" id="radio-number-1" type="radio" name="number" value="1" checked>
+                    <label class="label form__label" for="radio-number-1">
+                        <input class="radio form__input" id="radio-number-1" type="radio" name="number" value="1" checked>
                         <span>1</span>
                     </label>
-                    <label class="form__label" for="radio-number-2">
-                        <input class="form__input" id="radio-number-2" type="radio" name="number" value="2">
+                    <label class="label form__label" for="radio-number-2">
+                        <input class="radio form__input" id="radio-number-2" type="radio" name="number" value="2">
                         <span>2</span>
                     </label>
-                    <label class="form__label" for="radio-number-3">
-                        <input class="form__input" id="radio-number-3" type="radio" name="number" value="3">
+                    <label class="label form__label" for="radio-number-3">
+                        <input class="radio form__input" id="radio-number-3" type="radio" name="number" value="3">
                         <span>3</span>
                     </label>
-                    <label class="form__label" for="radio-number-4">
-                        <input class="form__input" id="radio-number-4" type="radio" name="number" value="4">
+                    <label class="label form__label" for="radio-number-4">
+                        <input class="radio form__input" id="radio-number-4" type="radio" name="number" value="4">
                         <span>4</span>
                     </label>
                 </div>
@@ -195,12 +196,12 @@
                 <h6 class="form__choice-title">Площадь, м2:</h6>
                 <div class="form__choice-area">
                     <div class="form__input-wrapper">
-                        <input class="form__input-text" type="text" name="from">
+                        <input class="form__input-text" type="text" name="from" id="from">
                         <span>от</span> 
                     </div>
                     <span class="form__line"></span>
                     <div class="form__input-wrapper">
-                        <input class="form__input-text" type="text" name="to"> 
+                        <input class="form__input-text" type="text" name="to" id="to"> 
                         <span>до</span>
                     </div>
                 </div>
@@ -224,7 +225,7 @@
     </div>
 </section>
         <main>
-            <section class="price">
+            <section class="price" id="price">
     <div class="container price__container">
         <h2 class="title price__title">Цены на ремонт</h2>
         <div class="swiper price__slider">
@@ -374,6 +375,250 @@
         </div>
     </div>
 </section>
+            <section class="works">
+    <div class="container works__container">
+        <h2 class="title works__title">Примеры наших работ</h2>
+        <form action="" class="works__form" id="worksForm" method="post">
+            <div class="works__type">
+                <label class="works__label" for="works-type-1">
+                    <input class="works__input" id="works-type-1" type="radio" name="type" value="Капитальный" checked>
+                    <span>Капитальный</span>
+                </label>
+                <label class="works__label" for="works-type-2">
+                    <input class="works__input" id="works-type-2" type="radio" name="type" value="Косметический">
+                    <span>Косметический</span>
+                </label>
+                <label class="works__label" for="works-type-3">
+                    <input class="works__input" id="works-type-3" type="radio" name="type" value="Под ключ">
+                    <span>Под ключ</span>
+                </label>
+                <label class="works__label" for="works-type-4">
+                    <input class="works__input" id="works-type-4" type="radio" name="type" value="Студии">
+                    <span>Студии</span>
+                </label>
+                <label class="works__label" for="works-type-5">
+                    <input class="works__input" id="works-type-5" type="radio" name="type" value="Черновой">
+                    <span>Черновой</span>
+                </label>
+            </div>
+            <div class="works__area">
+                <label class="label works__label" for="works-area-1">
+                    <input class="radio works__input" id="works-area-1" type="radio" name="area" value="55" checked>
+                    <span>55 м2</span>
+                </label>
+                <label class="label works__label" for="works-area-2">
+                    <input class="radio works__input" id="works-area-2" type="radio" name="area" value="61">
+                    <span>61 м2</span>
+                </label>
+                <label class="label works__label" for="works-area-3">
+                    <input class="radio works__input" id="works-area-3" type="radio" name="area" value="72">
+                    <span>72 м2</span>
+                </label>
+                <label class="label works__label" for="works-area-4">
+                    <input class="radio works__input" id="works-area-4" type="radio" name="area" value="88">
+                    <span>88 м2</span>
+                </label>
+                <label class="label works__label" for="works-area-5">
+                    <input class="radio works__input" id="works-area-5" type="radio" name="area" value="106">
+                    <span>106 м2</span>
+                </label>
+                <label class="label works__label" for="works-area-6">
+                    <input class="radio works__input" id="works-area-6" type="radio" name="area" value="63">
+                    <span>63 м2</span>
+                </label>
+                <label class="label works__label" for="works-area-7">
+                    <input class="radio works__input" id="works-area-7" type="radio" name="area" value="41">
+                    <span>41 м2</span>
+                </label>
+            </div>
+        </form>
+        <div class="swiper works__slider">
+            <div class="swiper-wrapper works__wrapper">
+              <div class="swiper-slide works__slide">
+                <div class="works__img">
+                    <picture><source srcset="img/works/slider-img.webp" type="image/webp"><img src="img/works/slider-img.png" alt="background"></picture>
+                </div>
+                <div class="works__info">
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/dollar.svg" alt="$">
+                        </div>
+                        <span class="works__subtitle">Сумма:</span>
+                        <span class="works__data">272 250 руб.</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/grid.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Площадь:</span>
+                        <span class="works__data">43 м2</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/calendar.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Срок:</span>
+                        <span class="works__data">90 дней</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/home.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Комнат:</span>
+                        <span class="works__data">3</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/map-pin.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Адрес:</span>
+                        <span class="works__data">Кулика 18</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/file-text.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Перечень работ:</span>
+                    </div>
+                    
+                    <ul class="works__list">
+                        <li class="works__point">Штукатурка стен по маякам</li>
+                        <li class="works__point">Грунтовка стен и потолка</li>
+                        <li class="works__point">Монтаж натяжных потолков</li>
+                        <li class="works__point">Шпатлёвка стен под обои</li>
+                        <li class="works__point">Окраске стен</li>
+                        <li class="works__point">Укладка плитки в с/у</li>
+                        <li class="works__point">Прокладка электрики</li>
+                        <li class="works__point">Установка плинтусов и откосов</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="swiper-slide works__slide">
+                <div class="works__img">
+                    <picture><source srcset="img/works/slider-img.webp" type="image/webp"><img src="img/works/slider-img.png" alt="background"></picture>
+                </div>
+                <div class="works__info">
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/dollar.svg" alt="$">
+                        </div>
+                        <span class="works__subtitle">Сумма:</span>
+                        <span class="works__data">272 250 руб.</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/grid.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Площадь:</span>
+                        <span class="works__data">43 м2</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/calendar.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Срок:</span>
+                        <span class="works__data">90 дней</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/home.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Комнат:</span>
+                        <span class="works__data">3</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/map-pin.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Адрес:</span>
+                        <span class="works__data">Кулика 18</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/file-text.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Перечень работ:</span>
+                    </div>
+                    
+                    <ul class="works__list">
+                        <li class="works__point">Штукатурка стен по маякам</li>
+                        <li class="works__point">Грунтовка стен и потолка</li>
+                        <li class="works__point">Монтаж натяжных потолков</li>
+                        <li class="works__point">Шпатлёвка стен под обои</li>
+                        <li class="works__point">Окраске стен</li>
+                        <li class="works__point">Укладка плитки в с/у</li>
+                        <li class="works__point">Прокладка электрики</li>
+                        <li class="works__point">Установка плинтусов и откосов</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="swiper-slide works__slide">
+                <div class="works__img">
+                    <picture><source srcset="img/works/slider-img.webp" type="image/webp"><img src="img/works/slider-img.png" alt="background"></picture>
+                </div>
+                <div class="works__info">
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/dollar.svg" alt="$">
+                        </div>
+                        <span class="works__subtitle">Сумма:</span>
+                        <span class="works__data">272 250 руб.</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/grid.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Площадь:</span>
+                        <span class="works__data">43 м2</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/calendar.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Срок:</span>
+                        <span class="works__data">90 дней</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/home.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Комнат:</span>
+                        <span class="works__data">3</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/map-pin.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Адрес:</span>
+                        <span class="works__data">Кулика 18</span>
+                    </div>
+                    <div class="works__item">
+                        <div class="works__icon">
+                            <img src="img/icon/file-text.svg" alt="">
+                        </div>
+                        <span class="works__subtitle">Перечень работ:</span>
+                    </div>
+                    
+                    <ul class="works__list">
+                        <li class="works__point">Штукатурка стен по маякам</li>
+                        <li class="works__point">Грунтовка стен и потолка</li>
+                        <li class="works__point">Монтаж натяжных потолков</li>
+                        <li class="works__point">Шпатлёвка стен под обои</li>
+                        <li class="works__point">Окраске стен</li>
+                        <li class="works__point">Укладка плитки в с/у</li>
+                        <li class="works__point">Прокладка электрики</li>
+                        <li class="works__point">Установка плинтусов и откосов</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev works__prev"></div>
+            <div class="swiper-button-next works__next"></div>
+        </div>
+        <button class="button-green works__button" form="worksForm">Оставить заявку</button>
+    </div>
+</section>
         </main>
         
         <div class="modal">
@@ -387,6 +632,6 @@
         <p class="modal__text">В ближайшее время наш менеджер свяжется  с Вами</p>
     </div>
 </div>
-        <script src="js/app.min.js?_v=20220726224957"></script>
+        <script src="js/app.min.js?_v=20220727182618"></script>
     </body>
 </html>
