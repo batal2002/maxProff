@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/MP.svg">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220727182618">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220727192811">
     <title>MaxProff</title>
 </head>
     <body>
@@ -227,7 +227,7 @@
         <main>
             <section class="price" id="price">
     <div class="container price__container">
-        <h2 class="title price__title">Цены на ремонт</h2>
+        <h2 class="price__title">Цены на ремонт</h2>
         <div class="swiper price__slider">
             <div class="swiper-wrapper price__wrapper">
                 <div class="swiper-slide price__slide slide">
@@ -377,7 +377,7 @@
 </section>
             <section class="works">
     <div class="container works__container">
-        <h2 class="title works__title">Примеры наших работ</h2>
+        <h2 class="works__title">Примеры наших работ</h2>
         <form action="" class="works__form" id="worksForm" method="post">
             <div class="works__type">
                 <label class="works__label" for="works-type-1">
@@ -619,6 +619,45 @@
         <button class="button-green works__button" form="worksForm">Оставить заявку</button>
     </div>
 </section>
+            <section class="stocks">
+    <div class="container stocks__container">
+        <h2 class="stocks__title">Акции</h2>
+        <div class="swiper stocks__slider">
+            <div class="swiper-wrapper stocks__wrapper">
+                <div class="swiper-slide stocks__slide">
+                    <div class="stocks__gradient"></div>
+                    <div class="stocks__img">
+                        <picture><source srcset="img/stocks/bg1.webp" type="image/webp"><img src="img/stocks/bg1.png" alt=""></picture>
+                    </div>
+                    <h3 class="stocks__subtitle">Новоселам</h3>
+                    <span class="stocks__description">Специальная скидка для тех кто переехал не более года назад</span>
+                    <button class="button-green open-modal stocks__button">Получить скидку</button>
+                </div>
+                <div class="swiper-slide stocks__slide">
+                    <div class="stocks__gradient"></div>
+                    <div class="stocks__img">
+                        <picture><source srcset="img/stocks/bg2.webp" type="image/webp"><img src="img/stocks/bg2.png" alt=""></picture>
+                    </div>
+                    <h3 class="stocks__subtitle">Молодоженам</h3>
+                    <span class="stocks__description">Спец.скидка если с момента регистрации прошло не более года</span>
+                    <button class="button-green open-modal stocks__button">Получить скидку</button>
+                </div>
+                <div class="swiper-slide stocks__slide">
+                    <div class="stocks__gradient"></div>
+                    <div class="stocks__img">
+                        <picture><source srcset="img/stocks/bg3.webp" type="image/webp"><img src="img/stocks/bg3.png" alt=""></picture>
+                    </div>
+                    <h3 class="stocks__subtitle">Пенсионерам</h3>
+                    <span class="stocks__description">Специальная скидка для наших дорогих</span>
+                    <button class="button-green open-modal stocks__button">Получить скидку</button>
+                </div>
+            </div>
+
+            <div class="swiper-pagination stocks__pagination"></div>
+        </div>
+        <button class="stocks__view-all">Все акции</button>
+    </div>
+</section>
         </main>
         
         <div class="modal">
@@ -632,6 +671,6 @@
         <p class="modal__text">В ближайшее время наш менеджер свяжется  с Вами</p>
     </div>
 </div>
-        <script src="js/app.min.js?_v=20220727182618"></script>
+        <script src="js/app.min.js?_v=20220727192811"></script>
     </body>
 </html>
