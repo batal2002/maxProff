@@ -66,7 +66,7 @@ try {
 
     // $mail->setFrom('batlovb@yandex.ru', 'batlovb'); // Адрес самой почты и имя отправителя
 
-    $mail->addAddress('bogdan200255@gmail.com');  
+    //$mail->addAddress('bogdan200255@gmail.com');  
     $mail->addAddress('batlovb@yandex.ru');   
 
     // Отправка сообщения
