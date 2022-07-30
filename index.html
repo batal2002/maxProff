@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/MP.svg">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220729212448">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220730233827">
     <title>MaxProff</title>
 </head>
     <body>
@@ -16,15 +16,15 @@
             <div class="header__burger">
                 <span></span>
             </div>
-            <a href="#" class="logo header__logo">Max<span class="--green">P</span>roff</a>
+            <a href="index.html" class="logo header__logo">Max<span class="--green">P</span>roff</a>
             <a href="tel:+72332222222" class="header__button-mobile"></a>
             <nav class="header__nav">
                 <a href="#price" class="header__anchor">Цены</a>
                 <a href="" class="header__anchor">Услуги</a>
-                <a href="" class="header__anchor">Портфолио</a>
-                <a href="" class="header__anchor">Акции</a>
-                <a href="" class="header__anchor">Преимущества</a>
-                <a href="" class="header__anchor">Блог</a>
+                <a href="#works" class="header__anchor">Портфолио</a>
+                <a href="#stocks" class="header__anchor">Акции</a>
+                <a href="#benefit" class="header__anchor">Преимущества</a>
+                <a href="#channel" class="header__anchor">Блог</a>
                 <a href="" class="header__anchor">Контакты</a>
             </nav>
             <a href="tel:+72332222222" class="tel header__tel">
@@ -139,7 +139,7 @@
         <form action="#" class="form__calc" method="POST">
             <h4 class="form__name">РАССЧИТАЙТЕ стоимость ремонта</h4>
             <div class="form__radiobuttons">
-                <h5 class="form__choice-title">Вид ремонта:</h6>
+                <h5 class="form__choice-title">Вид ремонта:</h5>
                 <div class="form__choice">
                     <label class="label form__label" for="radio-type-1">
                         <input class="radio form__input" id="radio-type-1" type="radio" name="type" value="Косметический" checked>
@@ -160,7 +160,7 @@
                 </div>
             </div>
             <div class="form__radiobuttons">
-                <h5 class="form__choice-title">Тип вашей недвижимости:</h6>
+                <h5 class="form__choice-title">Тип вашей недвижимости:</h5>
                 <div class="form__choice">
                     <label class="label form__label" for="radio-property-1">
                         <input class="radio form__input" id="radio-property-1" type="radio" name="property" value="Новостройка" checked>
@@ -173,7 +173,7 @@
                 </div>
             </div>
             <div class="form__radiobuttons">
-                <h5 class="form__choice-title">Количество комнат</h6>
+                <h5 class="form__choice-title">Количество комнат</h5>
                 <div class="form__choice-room">
                     <label class="label form__label" for="radio-number-1">
                         <input class="radio form__input" id="radio-number-1" type="radio" name="number" value="1" checked>
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div class="form__area">
-                <h5 class="form__choice-title">Площадь, м2:</h6>
+                <h5 class="form__choice-title">Площадь, м2:</h5>
                 <div class="form__choice-area">
                     <div class="form__input-wrapper">
                         <input class="form__input-text" type="text" name="from" id="from">
@@ -218,7 +218,7 @@
                 </div>
             </div>
             <div class="form__send">
-                <h5 class="form__choice-title">Введите номер телефона</h6>
+                <h5 class="form__choice-title">Введите номер телефона</h5>
                 <input class="form__input-tel" id="tel" type="tel" name="tel" placeholder="+7">
                 <button class="button-green form__button" type="submit">Заказать</button>
             </div>
@@ -375,7 +375,7 @@
         </div>
     </div>
 </section>
-            <section class="works">
+            <section class="works" id="works">
     <div class="container works__container">
         <h2 class="works__title">Примеры наших работ</h2>
         <form action="#" class="works__form" id="worksForm" method="post">
@@ -619,7 +619,7 @@
         <button class="button-green works__button" form="worksForm">Оставить заявку</button>
     </div>
 </section>
-            <section class="stocks">
+            <section class="stocks" id="stocks">
     <div class="container stocks__container">
         <h2 class="stocks__title">Акции</h2>
         <div class="swiper stocks__slider">
@@ -658,7 +658,7 @@
         <button class="stocks__view-all">Все акции</button>
     </div>
 </section>
-            <section class="how">
+            <section class="how" id="how">
     <div class="container how__container">
         <h2 class="how__title">Как мы работаем</h2>
         <span class="how__description">Вам понятен каждый этап: фиксированные сроки и цены, предоставляем все документы: <span>накладные, гарантии, акты.</span> <span>Вы будете уверены в результате.</span></span>
@@ -840,7 +840,7 @@
         </div>
     </div>
 </section>
-            <section class="benefit">
+            <section class="benefit" id="benefit">
     <div class="container benefit__container">
         <h2 class="benefit__title">Наши преимущества</h2>
         <div class="benefit__wrapper">
@@ -881,7 +881,10 @@
         <div class="swiper reviews__slider">
             <div class="swiper-wrapper reviews__wrapper">
                 <div class="swiper-slide reviews__item">
-                    <div class="reviews__video"></div>
+                    <div class="reviews__video">
+                        <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="plug reviews__plug"></div>
+                    </div>
                     <div class="reviews__info">
                         <div class="reviews__subtitle">
                             <h4>Капитальный ремонт</h4>
@@ -891,7 +894,10 @@
                     </div>
                 </div>
                 <div class="swiper-slide reviews__item">
-                    <div class="reviews__video"></div>
+                    <div class="reviews__video">
+                        <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="plug reviews__plug"></div>
+                    </div>
                     <div class="reviews__info">
                         <div class="reviews__subtitle">
                             <h4>Капитальный ремонт</h4>
@@ -901,7 +907,10 @@
                     </div>
                 </div>
                 <div class="swiper-slide reviews__item">
-                    <div class="reviews__video"></div>
+                    <div class="reviews__video">
+                        <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="plug reviews__plug"></div>
+                    </div>
                     <div class="reviews__info">
                         <div class="reviews__subtitle">
                             <h4>Капитальный ремонт</h4>
@@ -911,7 +920,10 @@
                     </div>
                 </div>
                 <div class="swiper-slide reviews__item">
-                    <div class="reviews__video"></div>
+                    <div class="reviews__video">
+                        <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="plug reviews__plug"></div>
+                    </div>
                     <div class="reviews__info">
                         <div class="reviews__subtitle">
                             <h4>Капитальный ремонт</h4>
@@ -1096,27 +1108,27 @@
         <div class="masters__wrap">
             <div class="swiper masters__slider">
                 <div class="swiper-wrapper masters__wrapper">
-                    <div div class="swiper-slide masters__slide">
+                    <div class="swiper-slide masters__slide">
                         <div class="masters__img">
                             <picture><source srcset="img/masters/1.webp" type="image/webp"><img src="img/masters/1.png" alt=""></picture>
                         </div>
                     </div>
-                    <div div class="swiper-slide masters__slide">
+                    <div class="swiper-slide masters__slide">
                         <div class="masters__img">
                             <picture><source srcset="img/masters/2.webp" type="image/webp"><img src="img/masters/2.png" alt=""></picture>
                         </div>
                     </div>
-                    <div div class="swiper-slide masters__slide">
+                    <div class="swiper-slide masters__slide">
                         <div class="masters__img">
                             <picture><source srcset="img/masters/1.webp" type="image/webp"><img src="img/masters/1.png" alt=""></picture>
                         </div>
                     </div>
-                    <div div class="swiper-slide masters__slide">
+                    <div class="swiper-slide masters__slide">
                         <div class="masters__img">
-                            <picture><source srcset="img/masters/2.webp" type="image/webp"><img src="img/masters/2.png" alt=""></picture>
+                            <picture><source srcset="img/quality/bg.webp" type="image/webp"><img src="img/quality/bg.png" alt=""></picture>
                         </div>
                     </div>
-                    <div div class="swiper-slide masters__slide">
+                    <div class="swiper-slide masters__slide">
                         <div class="masters__img">
                             <picture><source srcset="img/masters/2.webp" type="image/webp"><img src="img/masters/2.png" alt=""></picture>
                         </div>
@@ -1128,7 +1140,10 @@
             <div class="swiper-button-next masters__next"></div>
         </div>
         <div class="masters__footer">
-            <div class="masters__video"></div>
+            <div class="masters__video">
+                <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="plug masters__plug"></div>
+            </div>
             <div class="masters__info">
                 <ul class="masters__list">
                     <li class="masters__point">Обучение мастеров каждые 6 месяцев</li>
@@ -1142,18 +1157,39 @@
         </div>
     </div>
 </section>
-            <section class="channel">
+            <section class="channel" id="channel">
     <div class="container channel__container">
         <h2 class="channel__title">Наш you-tube канал</h2>
         <div class="swiper channel__slider">
             <div class="swiper-wrapper channel__wrapper">
-                <div class="swiper-slide channel__slide"></div>
-                <div class="swiper-slide channel__slide"></div>
-                <div class="swiper-slide channel__slide"></div>
-                <div class="swiper-slide channel__slide"></div>
-                <div class="swiper-slide channel__slide"></div>
-                <div class="swiper-slide channel__slide"></div>
-                <div class="swiper-slide channel__slide"></div>
+                <div class="swiper-slide channel__slide">
+                    <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="plug channel__plug"></div>
+                </div>
+                <div class="swiper-slide channel__slide">
+                    <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="plug channel__plug"></div>
+                </div>
+                <div class="swiper-slide channel__slide">
+                    <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="plug channel__plug"></div>
+                </div>
+                <div class="swiper-slide channel__slide">
+                    <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="plug channel__plug"></div>
+                </div>
+                <div class="swiper-slide channel__slide">
+                    <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="plug channel__plug"></div>
+                </div>
+                <div class="swiper-slide channel__slide">
+                    <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="plug channel__plug"></div>
+                </div>
+                <div class="swiper-slide channel__slide">
+                    <iframe class="video" width="100%" height="100%" data-src="https://www.youtube.com/embed/o6oZpqxowis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="plug channel__plug"></div>
+                </div>
             </div>
         </div>
         <div class="swiper channel__slider2">
@@ -1216,7 +1252,7 @@
                     <div class="issues__plus"></div>
                     <span class="issues__subtitle">Сколько лет работает компания?</span>
                 </div>
-                <span class="issues__content">Конечно! Будем рады видеть Вас в офисе по адресу:</span>
+                <span class="issues__content">Конечно! Будем рады видеть Вас в офисе по адресу:Конечно! Будем рады видеть Вас в офисе по адресу:Конечно! Будем рады видеть Вас в офисе по адресу:Конечно! Будем рады видеть Вас в офисе по адресу:Конечно! Будем рады видеть Вас в офисе по адресу:Конечно! Будем рады видеть Вас в офисе по адресу:Конечно! Будем рады видеть Вас в офисе по адресу:Конечно! Будем рады видеть Вас в офисе по адресу:</span>
             </div>
             <div class="issues__item">
                 <div class="issues__header">
@@ -1308,25 +1344,25 @@
             </div>
             <div class="footer__column">
                 <ul class="footer__list">
-                    <a href="#" class="footer__anchor">Портфолио</a>
-                    <a href="#" class="footer__anchor">Стоимость</a>
-                    <a href="#" class="footer__anchor">Акции</a>
-                    <a href="#" class="footer__anchor">О компании</a>
-                    <a href="#" class="footer__anchor">Статьи</a>
-                    <a href="#" class="footer__anchor">Контакты</a>
+                    <li><a href="#works" class="footer__anchor">Портфолио</a></li>
+                    <li><a href="#price" class="footer__anchor">Стоимость</a></li>
+                    <li><a href="#stocks" class="footer__anchor">Акции</a></li>
+                    <li><a href="#how" class="footer__anchor">О компании</a></li>
+                    <li><a href="#channel" class="footer__anchor">Статьи</a></li>
+                    <li><a href="#" class="footer__anchor">Контакты</a></li>
                 </ul>
             </div>
             <div class="footer__column">
-                <a href="tel:+72332222222" class="footer__tel">
+                <div class="footer__tel">
                     <div class="footer__tel-img">
                         <img src="img/footer/phone.svg" alt="">
                     </div>
                     <div>
-                        <span class="footer__tel-number">+7 (233) 222-22-22</span>
+                        <a href="tel:+72332222222" class="footer__tel-number">+7 (233) 222-22-22</a>
                         <span class="footer__tel-time">08:00 - 22:00, без выходных</span>
-                        <span class="footer__tel-order">Заказать звонок</span>
+                        <span class="footer__tel-order open-modal">Заказать звонок</span>
                     </div>
-                </a>
+                </div>
                 <a href="mailto:@" class="footer__mail">
                     <img src="img/icon/mail.svg" alt="">
                     <span>Электронная почта @</span>
@@ -1342,22 +1378,22 @@
         <div class="footer__bot">
             <span class="footer__copyright"><span>©</span> 2021 «MaxProff» <a href="#">Правовая информация</a></span>
             <div class="footer__media">
-                <a href="#" class="footer__media-icon">
+                <a href="https://www.facebook.com" class="footer__media-icon">
                     <img src="img/footer/facebook.svg" alt="">
                 </a>
-                <a href="#" class="footer__media-icon">
+                <a href="https://www.youtube.com" class="footer__media-icon">
                     <img src="img/footer/youtube.svg" alt="">
                 </a>
-                <a href="#" class="footer__media-icon">
+                <a href="https://www.instagram.com" class="footer__media-icon">
                     <img src="img/footer/inst.svg" alt="">
                 </a>
-                <a href="#" class="footer__media-icon">
+                <a href="https://desktop.telegram.org" class="footer__media-icon">
                     <img src="img/footer/tg.svg" alt="">
                 </a>
-                <a href="#" class="footer__media-icon">
+                <a href="https://vk.com" class="footer__media-icon">
                     <img src="img/footer/vk.svg" alt="">
                 </a>
-                <a href="#" class="footer__media-icon">
+                <a href="https://ok.ru" class="footer__media-icon">
                     <picture><source srcset="img/footer/odnoklassniki.webp" type="image/webp"><img src="img/footer/odnoklassniki.png" alt=""></picture>
                 </a>
             </div>
@@ -1378,6 +1414,6 @@
         <p class="modal__text">В ближайшее время наш менеджер свяжется  с Вами</p>
     </div>
 </div>
-        <script src="js/app.min.js?_v=20220729212448"></script>
+        <script src="js/app.min.js?_v=20220730233827"></script>
     </body>
 </html>
