@@ -2082,6 +2082,10 @@ button {
   background: linear-gradient(0deg, #555555, #555555), #FFFFFF;
 }
 
+.masters__plug::before {
+  opacity: 1;
+}
+
 .masters__info {
   background: #FFFFFF;
   -webkit-box-shadow: 0 0 1rem rgba(215, 215, 215, 0.25);
@@ -2941,6 +2945,17 @@ button {
     cursor: pointer;
   }
 
+  .plug::before {
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  .plug:hover::before {
+    opacity: 1;
+  }
+
   .label {
     cursor: pointer;
   }
@@ -2990,17 +3005,6 @@ button {
 
   .works__type .works__label {
     cursor: pointer;
-  }
-
-  .reviews__plug::before {
-    opacity: 0;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-  }
-
-  .reviews__plug:hover::before {
-    opacity: 1;
   }
 
   .issues__item {
