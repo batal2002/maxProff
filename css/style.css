@@ -107,7 +107,7 @@
 }
 
 .no-webp .plug::before {
-  background: url(../img/icon/play.png); }
+  background: url(../img/icon/play.png) center/cover no-repeat; }
 
 .plug::before {
   content: "";
@@ -1148,12 +1148,6 @@ button {
   padding: 10.1rem 0 6rem;
 }
 
-.works__container {
-  overflow: hidden;
-  max-width: 136.6rem;
-  padding: 0 8.3rem !important;
-}
-
 .works__title {
   margin: 0 0 7rem 2rem;
 }
@@ -1218,9 +1212,12 @@ button {
   max-width: 66.6rem;
 }
 
+.works__wrap {
+  position: relative;
+}
+
 .works__slider {
   margin-bottom: 3.1rem;
-  overflow: visible;
 }
 
 .works__slide {
@@ -1235,14 +1232,14 @@ button {
 
 .works__img {
   width: 68%;
-  height: 100%;
   border-radius: 0.6rem;
   overflow: hidden;
 }
 
 .works__img img {
   display: block;
-  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .works__info {
@@ -2820,26 +2817,6 @@ button {
   line-height: 100%;
 }
 
-.error__container {
-  padding: 7rem;
-}
-
-.error__title {
-  margin-bottom: 3rem;
-  text-align: left;
-}
-
-.error__text {
-  font-size: 2rem;
-  text-decoration: underline;
-  color: #6CAC3D;
-}
-
-.footer {
-  margin-bottom: 0;
-  margin-top: auto;
-}
-
 .logo {
   font-family: "SairaStencilOne";
   font-weight: 400;
@@ -3035,6 +3012,12 @@ button {
 
   .footer__anchor:hover {
     color: #6CAC3D;
+  }
+}
+
+@media (min-width: 90em) {
+  html {
+    font-size: 0.69444vw;
   }
 }
 
@@ -4691,7 +4674,7 @@ button {
   }
 }
 
-.webp .plug::before { background: url(../img/icon/play.webp); }
+.webp .plug::before { background: url(../img/icon/play.webp) center/cover no-repeat; }
 
 .webp .form { background: url(../img/form/bg.webp) right/cover no-repeat; }
 
