@@ -3015,12 +3015,6 @@ button {
   }
 }
 
-@media (min-width: 90em) {
-  html {
-    font-size: 0.69444vw;
-  }
-}
-
 @media (max-width: 85em) {
   .works__container {
     max-width: 123rem;
